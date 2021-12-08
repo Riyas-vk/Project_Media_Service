@@ -88,6 +88,16 @@ public class MyService extends Service {
             }
         }
 
+        @Override
+        public void pauseSong() throws RemoteException {
+            mediaPlayer.pause();
+            if(mediaPlayer.isPlaying()){
+                System.out.println("Still PLaying");
+            }else{
+                System.out.println("Paused");
+            }
+        }
+
 
         @Override
         public IBinder asBinder() {

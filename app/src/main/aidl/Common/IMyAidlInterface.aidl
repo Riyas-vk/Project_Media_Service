@@ -7,6 +7,7 @@ interface IMyAidlInterface {
  String getVehicleModel();
  List<String> getAll();
  void playSong();
+ void pauseSong();
 
 
 }
